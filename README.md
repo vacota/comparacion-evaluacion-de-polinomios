@@ -2,17 +2,19 @@
 
 # Evaluación de Polinomios 👮🏻‍♀️
 
-### Resumen 
+### Resumen 📋
 
-Un breve programa que ejecuta dos métodos diferentes para evaluar polinomios y que compara las evaluaciones de los dos métodos para observar su respectiva eficiencia. Esto por medio de evaluar dichos polinomios en valores que tienen un rango de -10 a 10 al igual que sus coeficientes. Se toma también el tiempo de evaluación usando un cronómetro para después calcular sus promedios en una última fila. 
+Un breve programa que ejecuta dos métodos diferentes para evaluar polinomios y que compara las evaluaciones de los dos métodos para observar su respectiva eficiencia.
 
 Métodos utilizados:
-1. Método de Horner
-2. Método Estándar
+1. **Método de Horner**
+2. **Método Estándar**
+
+Esto se realiza por medio de evaluar dichos polinomios en valores que pueden tomar un valor entre el rango de -10 a 10, al igual que sus coeficientes. Se toma también el tiempo de evaluación usando un cronómetro para después calcular sus promedios y obtener información valiosa a partir de ellos.
 
 ### Requisitos 📃
 
-Se necesita tener un compilador c++ 20 y las bibliotecas/librerías usadas ya están dentro del programa las cuales corren en Windows, Linux, etc por igual. El programa fue creado y corrido en Windows 11. 
+Se necesita tener un compilador C++20. Las bibliotecas/librerías usadas ya están dentro del programa pues forman parte de la estandar, las cuales corren en Windows, Linux, etc por igual. El programa fue creado y corrido en el sistema operativo de Microsoft Windows 11. 
 - **GCC** (GNU Compiler Collection)
 
 ### Instrucciones de compilación y ejecución 💻
@@ -28,15 +30,15 @@ Se necesita tener un compilador c++ 20 y las bibliotecas/librerías usadas ya es
    ```
 3. Compile el código:
    ```sh
-   g++ main.cpp -o main -std=c++20
+   g++ evaluacion_de_polinomios.cpp -o evaluacion_de_polinomios -std=c++20
    ```
 4. Ejecute el código
    ```sh
-   ./main
+   ./evaluacion_de_polinomios
    ```
 ### Descripción 📒
 
-El método estándar de evaluación de polinomios es básicamente la versión más intuitiva a la cual llegaría cualquier programador. Se trata de calcular de forma separada cada evaluación y al obtener este resultado sumarlo a una suma total acumulativa empezando desde el coeficiente más pequeño en el polinomio o sea el término constante. Por el otro lado, el otro método que es el método de Horner lo que hace es factorizar las x de un polinomio hasta obtener la versión más reducida de este y consecutivamente calcular el resultado por medio de sumas y multiplicaciones una encima de la otra o anidadas. Esto acorta la cantidad de operaciones que se hacen al igual que su magnitud ya que al aprovecharse de la factorización, las operaciones realizadas son muchísimo más pequeñas que las que se realizan en el método estándar.
+El método estándar de evaluación de polinomios es la versión más intuitiva a la cual llegaría de manera mas intuitiva cualquier programador. Se trata de calcular de forma separada cada evaluación y al obtener este resultado sumarlo a una suma total acumulativa empezando desde el coeficiente más pequeño en el polinomio o sea el término constante. Por el otro lado, el otro método que es el método de Horner lo que hace es factorizar las x de un polinomio hasta obtener la versión más reducida de este y consecutivamente calcular el resultado por medio de sumas y multiplicaciones una encima de la otra o anidadas. Esto acorta la cantidad de operaciones que se hacen al igual que su magnitud ya que al aprovecharse de la factorización, las operaciones realizadas son muchísimo más pequeñas que las que se realizan en el método estándar.
 
 ### Resultados y gráfica 📊
 
@@ -44,7 +46,7 @@ El método estándar de evaluación de polinomios es básicamente la versión m�
 
 ### Análisis de resultados 🧑🏻‍💻
 
-El método más rápido por mucho fue el método de Horner como se puede ver en la gráfica de arriba. La razón radica en lo antes mencionado que es el hecho que al hacerse muchas menos operaciones en el método de Horner a comparación del método estándar, el tiempo que se tarda en ejecutarse el algoritmo y realizar todos los cálculos en el rango dado es mucho menos. La diferencia del tiempo en relación con la complejidad teórica o su número de operaciones es tal que la complejdad de tiempo de el método estándar al no solo tener forma de media parábola también se comporta como una, o sea de forma cuadrática O(n^2). Esto significa que su complejidad no es tan mala pero tampoco es tan óptima como lo es el método de Horner. El método de Horner al analizarlo tiene una complejidad de tiempo lineal, o sea O(n), y al verlo en la gráfica hasta pareciera que tiene complejidad de O(1) lo cual en muchos casos es lo mejor que puede suceder ya que el tiempo de ejecución y utilización de recursos es mínimo.
+El método más rápido por mucho fue el método de Horner como se puede ver en la curva superior. La razón radica en lo antes mencionado que es el hecho que al hacerse muchas menos operaciones en el método de Horner a comparación del método estándar, el tiempo que se tarda en ejecutarse el algoritmo y realizar todos los cálculos en el rango dado es mucho menos. La diferencia del tiempo en relación con la complejidad teórica o su número de operaciones es tal que la complejdad de tiempo de el método estándar al no solo tener forma de media parábola también se comporta como una, o sea de forma cuadrática O(n^2). Esto significa que su complejidad no es tan mala pero tampoco es tan óptima como lo es el método de Horner. El método de Horner al analizarlo tiene una complejidad de tiempo lineal, o sea O(n), y al verlo en la gráfica hasta pareciera que tiene complejidad de O(1) lo cual en muchos casos es lo mejor que puede suceder ya que el tiempo de ejecución y utilización de recursos es mínimo.
 
 ### Conclusiones 📝
 
