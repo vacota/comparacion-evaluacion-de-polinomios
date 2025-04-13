@@ -1,4 +1,4 @@
-# comparacion-evaluacion-de-polinomios
+# Comparación de la evaluación de polinomios
 
 # Evaluación de Polinomios 👮🏻‍♀️
 
