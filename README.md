@@ -40,7 +40,7 @@ El método estándar de evaluación de polinomios es básicamente la versión m�
 
 ### Resultados y gráfica
 
-
+![grafica_ordenamientos](grafica_ordenamientos.png)
 
 ### Análisis de resultados
 
